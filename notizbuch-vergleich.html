@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ein Ausgangstext über das handgeschriebene Notizbuch und drei KI-Bearbeitungen im direkten Vergleich.">
+    <meta name="author" content="Olaf Wulf">
+    <title>Textvergleich: Das handgeschriebene Notizbuch — Olaf Wulf</title>
+    <style>
+      :root { color-scheme: light; --ink:#18312b; --muted:#4f655d; --paper:#f6f5ef; --card:#fffefa; --line:#cbd6cd; --accent:#237052; }
+      * { box-sizing:border-box; }
+      body { margin:0; background:var(--paper); color:var(--ink); font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+      a { color:#155c42; text-underline-offset:.2em; }
+      a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+      .wrap { width:min(100% - 2.5rem,1240px); margin-inline:auto; }
+      header,footer { border-bottom:1px solid var(--line); }
+      .nav,.foot { display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap; padding-block:1.1rem; }
+      .brand { font-weight:700; letter-spacing:-.02em; text-decoration:none; color:var(--ink); }
+      .hero { padding-block:clamp(3rem,7vw,5rem) 2.5rem; }
+      .eyebrow { margin:0 0:.7rem; color:var(--accent); font-size:.78rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
+      h1,h2 { line-height:1.16; letter-spacing:-.035em; }
+      h1 { margin:0; font-size:clamp(2.4rem,6vw,4.2rem); }
+      .lead { max-width:760px; color:var(--muted); font-size:1.1rem; }
+      .versions { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; align-items:start; padding-bottom:4rem; }
+      .version { padding:clamp(1.4rem,3vw,2.2rem); background:var(--card); border:1px solid var(--line); border-radius:18px; scroll-margin-top:1rem; }
+      .version-head { display:flex; align-items:flex-start; gap:1rem; cursor:pointer; list-style:none; }
+      .version-head::-webkit-details-marker { display:none; }
+      .version-head::after { content:"+"; margin-left:auto; color:var(--accent); font-size:1.7rem; line-height:1; }
+      .version[open] .version-head { padding-bottom:1rem; border-bottom:1px solid var(--line); }
+      .version[open] .version-head::after { content:"−"; }
+      .version-head:focus-visible { outline:3px solid var(--accent); outline-offset:4px; border-radius:4px; }
+      .count { color:var(--accent); font-size:.8rem; font-weight:700; letter-spacing:.1em; }
+      h2 { margin:0; font-size:1.75rem; }
+      .meta { margin:.35rem 0 0; color:var(--muted); font-size:.84rem; }
+      .version-body p { margin:1.4rem 0 0; }
+      mark.changed { background:#ffe17a; color:#18312b; padding:.04em .08em; border-radius:.18em; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+      .legend { max-width:800px; margin:1rem 0 0; color:var(--muted); font-size:.94rem; }
+      .legend mark { white-space:nowrap; }
+      .omissions { margin-top:1.4rem; padding:1rem 1.1rem; background:#faf7ed; border:1px solid var(--line); border-radius:10px; }
+      .omissions summary { cursor:pointer; color:var(--ink); font-weight:650; }
+      .omissions summary:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+      .omissions p { margin:.8rem 0 0; font-size:.93rem; }
+      .omissions del { background:#f6d5c8; color:#552b21; padding:.03em .06em; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+      .foot { color:var(--muted); font-size:.88rem; }
+      footer { border-top:1px solid var(--line); border-bottom:0; }
+      @media(max-width:800px) { .versions { grid-template-columns:1fr; } }
+    </style>
+  </head>
+  <body>
+    <header><div class="wrap nav"><a class="brand" href="index.html">Olaf Wulf</a><a href="index.html">Zur Startseite</a></div></header>
+    <main class="wrap">
+      <div class="hero">
+        <p class="eyebrow">TextPass · Vergleich</p>
+        <h1>Das handgeschriebene Notizbuch</h1>
+        <p class="lead">Ein Ausgangstext, drei KI-Bearbeitungen. Öffne die Fassungen einzeln oder gleichzeitig und vergleiche, was verändert wurde und was stehen blieb. <a href="pausen-vergleich.html">Zum zweiten Vergleich über Pausen</a>.</p>
+      </div>
+      <p class="legend"><mark class="changed">Gelb markiert</mark> sind neue oder umformulierte Stellen. Entfallene Originalstellen stehen aufklappbar unter der jeweiligen Fassung.</p>
+      <section class="versions" aria-label="Textfassungen">
+      <details class="version" id="fassung-0" open>
+        <summary class="version-head"><span class="count">01</span><div><h2 id="titel-0">Ausgangstext</h2><p class="meta">Vom Nutzer bereitgestellt; Herkunft nicht dokumentiert.</p></div></summary>
+        <div class="version-body">
+          <p>In einer Zeit, in der Gedanken sofort gespeichert, geteilt und überschrieben werden können, wirkt das handgeschriebene Notizbuch zunächst wie ein Relikt. Es sucht nicht, es erinnert nicht von allein, und es legt nichts automatisch ab. Gerade darin liegt sein Nutzen. Wer mit der Hand schreibt, muss auswählen. Der Platz ist begrenzt, die Bewegung langsam, die Korrektur umständlich. Daraus entsteht eine andere Aufmerksamkeit.</p>
+          <p>Ein analoges Heft zwingt nicht zur Vollständigkeit. Es erlaubt Lücken, Abbrecher, Skizzen und Sätze, die später niemandem erklärt werden müssen. Diese Unvollkommenheit macht es brauchbar. Digitale Systeme versprechen Ordnung, Transparenz und Wiederauffindbarkeit. Das Notizbuch verspricht nichts davon. Es bietet einen Raum, in dem Gedanken noch nicht fertig sein müssen.</p>
+          <p>Viele führen deshalb zwei Ebenen. Das Digitale dient der Ablage, der Abstimmung und der späteren Nutzung. Das Heft dient dem Denken selbst. Was dort landet, muss nicht schön, vollständig oder anschlussfähig sein. Es muss nur lange genug stehen bleiben, um geprüft zu werden. Manche Einträge werden später übertragen. Andere bleiben und verlieren ihre Bedeutung. Auch das gehört dazu.</p>
+          <p>Der Wert liegt nicht in Nostalgie. Papier ist nicht besser, weil es alt ist. Es ist nützlich, weil es Widerstand bietet. Wer diesen Widerstand nutzt, schreibt weniger, oft aber genauer. Das Ergebnis ist kein System, sondern eine Praxis. Eine Praxis bleibt nur lebendig, wenn sie wiederholt wird, auch an Tagen, an denen nichts Wichtiges zu notieren scheint. Dann zeigt sich, ob das Heft ein Werkzeug ist oder nur eine Idee.</p>
+        </div>
+      </details>
+      <details class="version" id="fassung-1">
+        <summary class="version-head"><span class="count">02</span><div><h2 id="titel-1">Codex</h2><p class="meta">KI-Ausgabe · genaue Modellversion nicht dokumentiert.</p></div></summary>
+        <div class="version-body">
+          <p>Gedanken <mark class="changed" title="Gegenüber dem Ausgangstext geändert">lassen sich heute </mark>sofort <mark class="changed" title="Gegenüber dem Ausgangstext geändert">speichern, teilen </mark>und <mark class="changed" title="Gegenüber dem Ausgangstext geändert">überschreiben. Daneben </mark>wirkt <mark class="changed" title="Gegenüber dem Ausgangstext geändert">ein handgeschriebenes </mark>Notizbuch <mark class="changed" title="Gegenüber dem Ausgangstext geändert">fast </mark>wie ein Relikt. Es <mark class="changed" title="Gegenüber dem Ausgangstext geändert">durchsucht seine Seiten </mark>nicht, erinnert <mark class="changed" title="Gegenüber dem Ausgangstext geändert">an nichts </mark>und legt nichts automatisch ab. Gerade darin liegt sein <mark class="changed" title="Gegenüber dem Ausgangstext geändert">Nutzen: </mark>Wer mit der Hand schreibt, muss auswählen. Der Platz ist begrenzt, die Bewegung langsam, <mark class="changed" title="Gegenüber dem Ausgangstext geändert">eine </mark>Korrektur umständlich. <mark class="changed" title="Gegenüber dem Ausgangstext geändert">Das verändert die </mark>Aufmerksamkeit.</p>
+          <p>Ein Heft <mark class="changed" title="Gegenüber dem Ausgangstext geändert">verlangt keine </mark>Vollständigkeit. Es <mark class="changed" title="Gegenüber dem Ausgangstext geändert">lässt Lücken zu, abgebrochene Gedanken, </mark>Skizzen und Sätze, die später niemandem erklärt werden müssen. Diese Unvollkommenheit macht es brauchbar. Digitale Systeme versprechen Ordnung, Transparenz und Wiederauffindbarkeit. Das Notizbuch verspricht nichts davon. Es <mark class="changed" title="Gegenüber dem Ausgangstext geändert">gibt Gedanken </mark>Raum, <mark class="changed" title="Gegenüber dem Ausgangstext geändert">bevor sie </mark>fertig <mark class="changed" title="Gegenüber dem Ausgangstext geändert">sind.</mark></p>
+          <p>Viele <mark class="changed" title="Gegenüber dem Ausgangstext geändert">nutzen </mark>deshalb <mark class="changed" title="Gegenüber dem Ausgangstext geändert">beides. </mark>Das Digitale dient der Ablage, der Abstimmung und der späteren <mark class="changed" title="Gegenüber dem Ausgangstext geändert">Verwendung. </mark>Das Heft dient dem Denken selbst. Was <mark class="changed" title="Gegenüber dem Ausgangstext geändert">darin steht, </mark>muss <mark class="changed" title="Gegenüber dem Ausgangstext geändert">weder schön noch </mark>vollständig sein. Es muss nur lange genug stehen bleiben, um geprüft zu werden. Manche Einträge werden später übertragen. Andere bleiben <mark class="changed" title="Gegenüber dem Ausgangstext geändert">im Heft </mark>und verlieren ihre Bedeutung. Auch das gehört dazu.</p>
+          <p>Der Wert liegt nicht in Nostalgie. Papier ist nicht besser, weil es alt ist. Es <mark class="changed" title="Gegenüber dem Ausgangstext geändert">kann nützlich sein, </mark>weil es Widerstand bietet. Wer diesen Widerstand nutzt, schreibt weniger, oft aber genauer. <mark class="changed" title="Gegenüber dem Ausgangstext geändert">Daraus wird </mark>kein System, sondern eine Praxis. <mark class="changed" title="Gegenüber dem Ausgangstext geändert">Lebendig </mark>bleibt <mark class="changed" title="Gegenüber dem Ausgangstext geändert">sie nur, </mark>wenn <mark class="changed" title="Gegenüber dem Ausgangstext geändert">man </mark>sie wiederholt <mark class="changed" title="Gegenüber dem Ausgangstext geändert">– </mark>auch an Tagen, an denen nichts <mark class="changed" title="Gegenüber dem Ausgangstext geändert">wichtig genug scheint, um es aufzuschreiben. </mark>Dann zeigt sich, ob das Heft ein Werkzeug ist oder nur eine Idee.</p>
+          <details class="omissions"><summary>Entfallene oder ersetzte Originalstellen</summary>
+            <p><strong>Absatz 1:</strong> <del>In einer Zeit, in der</del> · <del>gespeichert, geteilt</del> · <del>überschrieben werden können,</del> · <del>das handgeschriebene</del> · <del>zunächst</del> · <del>sucht</del> · <del>es</del> · <del>nicht von allein,</del> · <del>es</del> · <del>Nutzen.</del> · <del>die</del> · <del>Daraus entsteht eine andere</del></p>
+            <p><strong>Absatz 2:</strong> <del>analoges</del> · <del>zwingt nicht zur</del> · <del>erlaubt Lücken, Abbrecher,</del> · <del>bietet einen</del> · <del>in dem Gedanken noch nicht</del> · <del>sein müssen.</del></p>
+            <p><strong>Absatz 3:</strong> <del>führen</del> · <del>zwei Ebenen.</del> · <del>Nutzung.</del> · <del>dort landet,</del> · <del>nicht schön,</del> · <del>oder anschlussfähig</del></p>
+            <p><strong>Absatz 4:</strong> <del>ist nützlich,</del> · <del>Das Ergebnis ist</del> · <del>Eine Praxis</del> · <del>nur lebendig,</del> · <del>wird,</del> · <del>Wichtiges zu notieren scheint.</del></p>
+          </details>
+        </div>
+      </details>
+      <details class="version" id="fassung-2">
+        <summary class="version-head"><span class="count">03</span><div><h2 id="titel-2">Claude</h2><p class="meta">KI-Ausgabe · genaue Modellversion nicht dokumentiert.</p></div></summary>
+        <div class="version-body">
+          <p>In einer Zeit, in der Gedanken sofort gespeichert, geteilt und überschrieben werden können, wirkt das handgeschriebene Notizbuch zunächst wie ein Relikt. Es sucht nicht, es erinnert nicht von allein, und es legt nichts automatisch ab. Gerade darin liegt sein Nutzen. Wer mit der Hand schreibt, muss auswählen. Der Platz ist begrenzt, die Bewegung langsam, die Korrektur umständlich. Daraus entsteht eine andere Aufmerksamkeit.</p>
+          <p>Ein analoges Heft zwingt nicht zur Vollständigkeit. Es erlaubt Lücken, Abbrecher, Skizzen und Sätze, die später niemandem erklärt werden müssen. Diese Unvollkommenheit macht es brauchbar. Digitale Systeme versprechen Ordnung, Transparenz und Wiederauffindbarkeit. Das Notizbuch verspricht nichts davon. Es bietet einen Raum, in dem Gedanken noch nicht fertig sein müssen.</p>
+          <p>Viele <mark class="changed" title="Gegenüber dem Ausgangstext geändert">arbeiten </mark>deshalb <mark class="changed" title="Gegenüber dem Ausgangstext geändert">auf </mark>zwei Ebenen. Das Digitale dient der Ablage, der Abstimmung und der späteren Nutzung. Das Heft dient dem Denken selbst. Was dort landet, muss nicht schön, vollständig oder anschlussfähig sein. Es muss nur lange genug stehen bleiben, um geprüft zu werden. Manche Einträge werden später übertragen. Andere bleiben und verlieren ihre Bedeutung. Auch das gehört dazu.</p>
+          <p>Der Wert liegt nicht in <mark class="changed" title="Gegenüber dem Ausgangstext geändert">Nostalgie: </mark>Papier ist nicht besser, weil es alt <mark class="changed" title="Gegenüber dem Ausgangstext geändert">ist, sondern </mark>nützlich, weil es Widerstand bietet. Wer diesen Widerstand nutzt, schreibt weniger, oft aber genauer. Das Ergebnis ist kein System, sondern eine Praxis. Eine Praxis bleibt nur lebendig, wenn sie wiederholt wird, auch an Tagen, an denen nichts Wichtiges zu notieren scheint. Dann zeigt sich, ob das Heft ein Werkzeug ist oder nur eine Idee.</p>
+          <details class="omissions"><summary>Entfallene oder ersetzte Originalstellen</summary>
+            <p><strong>Absatz 3:</strong> <del>führen</del></p>
+            <p><strong>Absatz 4:</strong> <del>Nostalgie.</del> · <del>ist. Es ist</del></p>
+          </details>
+        </div>
+      </details>
+      <details class="version" id="fassung-3">
+        <summary class="version-head"><span class="count">04</span><div><h2 id="titel-3">Grok</h2><p class="meta">KI-Ausgabe · genaue Modellversion nicht dokumentiert.</p></div></summary>
+        <div class="version-body">
+          <p><mark class="changed" title="Gegenüber dem Ausgangstext geändert">Heute lassen sich </mark>Gedanken sofort <mark class="changed" title="Gegenüber dem Ausgangstext geändert">speichern, teilen </mark>und <mark class="changed" title="Gegenüber dem Ausgangstext geändert">überschreiben. Das </mark>handgeschriebene Notizbuch <mark class="changed" title="Gegenüber dem Ausgangstext geändert">wirkt </mark>zunächst wie ein Relikt. Es sucht nicht, es erinnert nicht von allein, und es legt nichts automatisch ab. Gerade darin liegt sein Nutzen. Wer mit der Hand schreibt, muss auswählen. Der Platz ist begrenzt, die Bewegung langsam, die Korrektur umständlich. Daraus entsteht eine andere Aufmerksamkeit.</p>
+          <p>Ein analoges Heft zwingt nicht zur Vollständigkeit. Es erlaubt Lücken, Abbrecher, Skizzen und Sätze, die später niemandem erklärt werden müssen. Diese Unvollkommenheit macht es brauchbar. Digitale Systeme versprechen Ordnung, Transparenz und Wiederauffindbarkeit. Das Notizbuch verspricht nichts davon. Es bietet einen Raum, in dem Gedanken noch nicht fertig sein müssen.</p>
+          <p>Viele führen deshalb zwei Ebenen. Das Digitale dient der Ablage, der Abstimmung und der späteren Nutzung. Das Heft dient dem Denken selbst. Was dort landet, muss nicht schön, vollständig oder anschlussfähig sein. Es muss nur lange genug stehen bleiben, um geprüft zu werden. Manche Einträge werden später übertragen. Andere bleiben und verlieren ihre Bedeutung. Auch das gehört dazu.</p>
+          <p>Der Wert liegt nicht in Nostalgie. Papier ist nicht besser, weil es alt ist. Es ist nützlich, weil es Widerstand bietet. Wer diesen Widerstand nutzt, schreibt weniger, oft aber genauer. Das Ergebnis ist kein System, sondern eine Praxis. Eine Praxis bleibt nur lebendig, wenn sie wiederholt wird, auch an Tagen, an denen nichts Wichtiges zu notieren scheint. Dann zeigt sich, ob das Heft ein Werkzeug ist oder nur eine Idee.</p>
+          <details class="omissions"><summary>Entfallene oder ersetzte Originalstellen</summary>
+            <p><strong>Absatz 1:</strong> <del>In einer Zeit, in der</del> · <del>gespeichert, geteilt</del> · <del>überschrieben werden können, wirkt das</del></p>
+          </details>
+        </div>
+      </details>
+      </section>
+    </main>
+    <footer><div class="wrap foot"><span>© 2026 Olaf Wulf</span><a href="index.html#impressum">Impressum und Kontakt</a></div></footer>
+  </body>
+</html>

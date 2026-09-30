@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ein Ausgangstext über Kaffee und drei KI-Bearbeitungen im direkten Vergleich.">
+    <meta name="author" content="Olaf Wulf">
+    <title>Textvergleich: Kaffee — Olaf Wulf</title>
+    <style>
+      :root { color-scheme:light; --ink:#18312b; --muted:#4f655d; --paper:#f6f5ef; --card:#fffefa; --line:#cbd6cd; --accent:#237052; }
+      * { box-sizing:border-box; }
+      body { margin:0; background:var(--paper); color:var(--ink); font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+      a { color:#155c42; text-underline-offset:.2em; }
+      a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+      .wrap { width:min(100% - 2.5rem,1240px); margin-inline:auto; }
+      header,footer { border-bottom:1px solid var(--line); }
+      .nav,.foot { display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap; padding-block:1.1rem; }
+      .brand { font-weight:700; letter-spacing:-.02em; text-decoration:none; color:var(--ink); }
+      .hero { padding-block:clamp(3rem,7vw,5rem) 2.5rem; }
+      .eyebrow { margin:0 0 .7rem; color:var(--accent); font-size:.78rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
+      h1,h2 { line-height:1.16; letter-spacing:-.035em; }
+      h1 { margin:0; font-size:clamp(2.4rem,6vw,4.2rem); }
+      .lead { max-width:800px; color:var(--muted); font-size:1.1rem; }
+      .versions { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; align-items:start; padding-bottom:4rem; }
+      .version { padding:clamp(1.4rem,3vw,2.2rem); background:var(--card); border:1px solid var(--line); border-radius:18px; scroll-margin-top:1rem; }
+      .version-head { display:flex; align-items:flex-start; gap:1rem; cursor:pointer; list-style:none; }
+      .version-head::-webkit-details-marker { display:none; }
+      .version-head::after { content:"+"; margin-left:auto; color:var(--accent); font-size:1.7rem; line-height:1; }
+      .version[open] .version-head { padding-bottom:1rem; border-bottom:1px solid var(--line); }
+      .version[open] .version-head::after { content:"−"; }
+      .version-head:focus-visible { outline:3px solid var(--accent); outline-offset:4px; border-radius:4px; }
+      .count { color:var(--accent); font-size:.8rem; font-weight:700; letter-spacing:.1em; }
+      h2 { margin:0; font-size:1.75rem; }
+      .meta { margin:.35rem 0 0; color:var(--muted); font-size:.84rem; }
+      .version-body p { margin:1.4rem 0 0; }
+      mark.changed { background:#ffe17a; color:#18312b; padding:.04em .08em; border-radius:.18em; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+      .legend { max-width:800px; margin:1rem 0 0; color:var(--muted); font-size:.94rem; }
+      .omissions { margin-top:1.4rem; padding:1rem 1.1rem; background:#faf7ed; border:1px solid var(--line); border-radius:10px; }
+      .omissions summary { cursor:pointer; color:var(--ink); font-weight:650; }
+      .omissions summary:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+      .omissions p { margin:.8rem 0 0; font-size:.93rem; }
+      .omissions del { background:#f6d5c8; color:#552b21; padding:.03em .06em; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+      .foot { color:var(--muted); font-size:.88rem; }
+      footer { border-top:1px solid var(--line); border-bottom:0; }
+      @media(max-width:800px) { .versions { grid-template-columns:1fr; } }
+    </style>
+  </head>
+  <body>
+    <header><div class="wrap nav"><a class="brand" href="index.html">Olaf Wulf</a><a href="index.html">Zur Startseite</a></div></header>
+    <main class="wrap">
+      <div class="hero">
+        <p class="eyebrow">TextPass · Vergleich</p>
+        <h1>Kaffee: Der perfekte Start in den Tag</h1>
+        <p class="lead">Ein Ausgangstext und drei Bearbeitungen aus derselben TextPass-Runde. Die Texte stehen ohne Rangfolge nebeneinander. Bei zwei Ausgaben ist die Modellzuordnung noch offen.</p>
+      </div>
+      <p class="legend"><mark class="changed">Gelb markiert</mark> sind neue oder umformulierte Stellen. Entfallene Originalstellen stehen aufklappbar unter der jeweiligen Fassung.</p>
+      <section class="versions" aria-label="Textfassungen">
+        <details class="version" id="fassung-0" open>
+          <summary class="version-head"><span class="count">01</span><div><h2>Ausgangstext</h2><p class="meta">Vom Nutzer bereitgestellt; Herkunft nicht dokumentiert.</p></div></summary>
+          <div class="version-body">
+            <p>In der heutigen schnelllebigen Zeit ist Kaffee weit mehr als nur ein Getränk. Er ist ein fester Bestandteil unseres Alltags geworden und begleitet Millionen von Menschen weltweit durch den Tag. Doch was macht Kaffee eigentlich so besonders?</p>
+            <p>Zunächst einmal ist es wichtig zu verstehen, dass die Qualität des Kaffees von zahlreichen Faktoren abhängt. Sowohl die Herkunft der Bohnen als auch der Röstgrad spielen eine entscheidende Rolle. Darüber hinaus ist auch die richtige Zubereitung nicht zu unterschätzen.</p>
+            <p>Es gibt eine Vielzahl unterschiedlicher Zubereitungsmethoden. Ob French Press, Filterkaffee oder Espresso – jede Methode hat ihre ganz eigenen Vor- und Nachteile. Letztendlich kommt es immer auf die persönlichen Vorlieben an.</p>
+            <p>Nicht zuletzt sollte man auch die gesundheitlichen Aspekte berücksichtigen. Studien zeigen, dass moderater Kaffeekonsum durchaus positive Effekte haben kann. Dennoch gilt: Die Dosis macht das Gift.</p>
+            <p>Zusammenfassend lässt sich sagen, dass Kaffee ein faszinierendes Produkt mit einer langen Tradition ist. Wer sich intensiver damit beschäftigt, wird schnell feststellen, dass es hier noch viel zu entdecken gibt. In diesem Sinne: Genießen Sie Ihre nächste Tasse ganz bewusst!</p>
+          </div>
+        </details>
+
+        <details class="version" id="fassung-1">
+          <summary class="version-head"><span class="count">02</span><div><h2>Codex · Fassung 1</h2><p class="meta">KI-Ausgabe mit TextPass 1.0.6; genaue Modellversion nicht dokumentiert.</p></div></summary>
+          <div class="version-body">
+            <p>Kaffee <mark class="changed">gehört für Millionen Menschen zum Alltag. Er begleitet den Morgen, unterbricht den Arbeitstag oder bietet einen Moment der Ruhe. Doch warum schmeckt eine Tasse überzeugend, während eine andere kaum in Erinnerung bleibt?</mark></p>
+            <p><mark class="changed">Einen Teil der Antwort liefern die Bohnen. Ihre Herkunft prägt den Kaffee ebenso wie die Röstung. Was daraus in der Tasse entsteht, hängt außerdem von der Zubereitung ab. Erst im Zusammenspiel dieser Faktoren zeigt sich die Qualität.</mark></p>
+            <p><mark class="changed">Dabei gibt es keinen einzigen richtigen Weg. French Press, Filterkaffee und Espresso bringen jeweils eigene Stärken und Schwächen mit. Welche Methode am besten passt, entscheidet deshalb auch der persönliche Geschmack.</mark></p>
+            <p><mark class="changed">Zum Kaffee gehört ebenso die Frage nach seiner gesundheitlichen Wirkung. Studien weisen darauf hin, dass ein maßvoller Konsum positive Effekte haben kann. Wie so oft kommt es jedoch auf die Menge an.</mark></p>
+            <p>Kaffee <mark class="changed">verbindet Alltag und Tradition mit einer erstaunlichen Vielfalt. Wer genauer hinschaut, entdeckt hinter der vertrauten Tasse zahlreiche Unterschiede. Es lohnt sich daher, den nächsten Kaffee nicht nur nebenbei zu trinken, sondern bewusst wahrzunehmen.</mark></p>
+            <details class="omissions"><summary>Entfallene oder ersetzte Originalstellen</summary>
+              <p><del>In der heutigen schnelllebigen Zeit ist Kaffee weit mehr als nur ein Getränk.</del> · <del>Er ist ein fester Bestandteil unseres Alltags geworden und begleitet Millionen von Menschen weltweit durch den Tag.</del> · <del>Doch was macht Kaffee eigentlich so besonders?</del></p>
+              <p><del>Zunächst einmal ist es wichtig zu verstehen, dass</del> · <del>Es gibt eine Vielzahl unterschiedlicher Zubereitungsmethoden.</del> · <del>Nicht zuletzt sollte man auch die gesundheitlichen Aspekte berücksichtigen.</del> · <del>Zusammenfassend lässt sich sagen, dass</del></p>
+            </details>
+          </div>
+        </details>
+
+        <details class="version" id="fassung-2">
+          <summary class="version-head"><span class="count">03</span><div><h2>Fassung 2</h2><p class="meta">KI-Ausgabe; Modellzuordnung und genaue Modellversion noch offen.</p></div></summary>
+          <div class="version-body">
+            <p>Kaffee ist <mark class="changed">mehr als ein Getränk. Er gehört zum Alltag und begleitet Millionen Menschen weltweit durch den Tag.</mark></p>
+            <p><mark class="changed">Seine Qualität hängt von vielen Faktoren ab. Herkunft der Bohnen und Röstgrad spielen eine entscheidende Rolle, und</mark> auch die richtige Zubereitung ist nicht zu unterschätzen.</p>
+            <p><mark class="changed">Dafür gibt es viele Methoden, etwa</mark> French Press, Filterkaffee oder Espresso. <mark class="changed">Jede hat ihre eigenen Vor- und Nachteile; am Ende</mark> kommt es auf die persönlichen Vorlieben an.</p>
+            <p><mark class="changed">Auch die gesundheitliche Seite gehört dazu:</mark> Studien zeigen, dass moderater Kaffeekonsum durchaus positive Effekte haben kann. <mark class="changed">Doch</mark> die Dosis macht das Gift.</p>
+            <p>Kaffee ist ein faszinierendes Produkt mit <mark class="changed">langer Tradition, und</mark> wer sich <mark class="changed">näher</mark> damit beschäftigt, <mark class="changed">findet</mark> noch viel zu entdecken. Genießen Sie Ihre nächste Tasse ganz bewusst.</p>
+            <details class="omissions"><summary>Entfallene oder ersetzte Originalstellen</summary>
+              <p><del>In der heutigen schnelllebigen Zeit</del> · <del>weit</del> · <del>Er ist ein fester Bestandteil unseres Alltags geworden</del> · <del>Doch was macht Kaffee eigentlich so besonders?</del></p>
+              <p><del>Zunächst einmal ist es wichtig zu verstehen, dass</del> · <del>eine Vielzahl unterschiedlicher Zubereitungsmethoden</del> · <del>Nicht zuletzt sollte man auch die gesundheitlichen Aspekte berücksichtigen.</del> · <del>Zusammenfassend lässt sich sagen, dass</del> · <del>In diesem Sinne:</del></p>
+            </details>
+          </div>
+        </details>
+
+        <details class="version" id="fassung-3">
+          <summary class="version-head"><span class="count">04</span><div><h2>Fassung 3</h2><p class="meta">KI-Ausgabe; Modellzuordnung und genaue Modellversion noch offen.</p></div></summary>
+          <div class="version-body">
+            <p>Kaffee ist in der heutigen schnelllebigen Zeit weit mehr als nur ein Getränk. Er ist ein fester Bestandteil unseres Alltags geworden und begleitet Millionen von Menschen weltweit durch den Tag.</p>
+            <p>Die Qualität des Kaffees hängt von zahlreichen Faktoren ab. <mark class="changed">Die</mark> Herkunft der Bohnen und <mark class="changed">der</mark> Röstgrad spielen eine entscheidende Rolle, <mark class="changed">und</mark> auch die richtige Zubereitung ist nicht zu unterschätzen.</p>
+            <p>Es gibt eine Vielzahl unterschiedlicher Zubereitungsmethoden. Ob French Press, Filterkaffee oder Espresso<mark class="changed">:</mark> jede Methode hat ihre ganz eigenen Vor- und Nachteile. Letztendlich kommt es immer auf die persönlichen Vorlieben an.</p>
+            <p><mark class="changed">Auch die gesundheitlichen Aspekte sollte man berücksichtigen.</mark> Studien zeigen, dass moderater Kaffeekonsum durchaus positive Effekte haben kann. Dennoch gilt: Die Dosis macht das Gift.</p>
+            <p>Kaffee ist ein faszinierendes Produkt mit einer langen Tradition. Wer sich intensiver damit beschäftigt, wird schnell feststellen, dass es hier noch viel zu entdecken gibt. Genießen Sie Ihre nächste Tasse ganz bewusst.</p>
+            <details class="omissions"><summary>Entfallene oder ersetzte Originalstellen</summary>
+              <p><del>Doch was macht Kaffee eigentlich so besonders?</del> · <del>Zunächst einmal ist es wichtig zu verstehen, dass</del> · <del>Sowohl</del> · <del>Darüber hinaus ist</del> · <del>Nicht zuletzt</del> · <del>Zusammenfassend lässt sich sagen, dass</del> · <del>In diesem Sinne:</del></p>
+            </details>
+          </div>
+        </details>
+      </section>
+    </main>
+    <footer><div class="wrap foot"><span>© 2026 Olaf Wulf</span><a href="index.html#impressum">Impressum und Kontakt</a></div></footer>
+  </body>
+</html>

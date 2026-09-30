@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ein Ausgangstext über Pausen und drei KI-Bearbeitungen im direkten Vergleich.">
+    <meta name="author" content="Olaf Wulf">
+    <title>Textvergleich: Pausen und Alltag — Olaf Wulf</title>
+    <style>
+      :root { color-scheme: light; --ink:#18312b; --muted:#4f655d; --paper:#f6f5ef; --card:#fffefa; --line:#cbd6cd; --accent:#237052; }
+      * { box-sizing:border-box; }
+      body { margin:0; background:var(--paper); color:var(--ink); font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+      a { color:#155c42; text-underline-offset:.2em; }
+      a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+      .wrap { width:min(100% - 2.5rem,1240px); margin-inline:auto; }
+      header,footer { border-bottom:1px solid var(--line); }
+      .nav,.foot { display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap; padding-block:1.1rem; }
+      .brand { font-weight:700; letter-spacing:-.02em; text-decoration:none; color:var(--ink); }
+      .hero { padding-block:clamp(3rem,7vw,5rem) 2.5rem; }
+      .eyebrow { margin:0 0:.7rem; color:var(--accent); font-size:.78rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
+      h1,h2 { line-height:1.16; letter-spacing:-.035em; }
+      h1 { margin:0; font-size:clamp(2.4rem,6vw,4.2rem); }
+      .lead { max-width:760px; color:var(--muted); font-size:1.1rem; }
+      .versions { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; align-items:start; padding-bottom:4rem; }
+      .version { padding:clamp(1.4rem,3vw,2.2rem); background:var(--card); border:1px solid var(--line); border-radius:18px; scroll-margin-top:1rem; }
+      .version-head { display:flex; align-items:flex-start; gap:1rem; cursor:pointer; list-style:none; }
+      .version-head::-webkit-details-marker { display:none; }
+      .version-head::after { content:"+"; margin-left:auto; color:var(--accent); font-size:1.7rem; line-height:1; }
+      .version[open] .version-head { padding-bottom:1rem; border-bottom:1px solid var(--line); }
+      .version[open] .version-head::after { content:"−"; }
+      .version-head:focus-visible { outline:3px solid var(--accent); outline-offset:4px; border-radius:4px; }
+      .count { color:var(--accent); font-size:.8rem; font-weight:700; letter-spacing:.1em; }
+      h2 { margin:0; font-size:1.75rem; }
+      .meta { margin:.35rem 0 0; color:var(--muted); font-size:.84rem; }
+      .version-body p { margin:1.4rem 0 0; }
+      mark.changed { background:#ffe17a; color:#18312b; padding:.04em .08em; border-radius:.18em; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+      .legend { max-width:800px; margin:1rem 0 0; color:var(--muted); font-size:.94rem; }
+      .legend mark { white-space:nowrap; }
+      .omissions { margin-top:1.4rem; padding:1rem 1.1rem; background:#faf7ed; border:1px solid var(--line); border-radius:10px; }
+      .omissions summary { cursor:pointer; color:var(--ink); font-weight:650; }
+      .omissions summary:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+      .omissions p { margin:.8rem 0 0; font-size:.93rem; }
+      .omissions del { background:#f6d5c8; color:#552b21; padding:.03em .06em; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+      .foot { color:var(--muted); font-size:.88rem; }
+      footer { border-top:1px solid var(--line); border-bottom:0; }
+      @media(max-width:800px) { .versions { grid-template-columns:1fr; } }
+    </style>
+  </head>
+  <body>
+    <header><div class="wrap nav"><a class="brand" href="index.html">Olaf Wulf</a><a href="index.html">Zur Startseite</a></div></header>
+    <main class="wrap">
+      <div class="hero">
+        <p class="eyebrow">TextPass · Vergleich</p>
+        <h1>Pausen und Alltag</h1>
+        <p class="lead">Ein Ausgangstext und drei Bearbeitungen. Die drei Bearbeitungen stammen von Codex, Claude und Grok. Öffne die Texte einzeln oder gleichzeitig. <a href="notizbuch-vergleich.html">Zum Notizbuchvergleich</a>.</p>
+      </div>
+      <p class="legend"><mark class="changed">Gelb markiert</mark> sind neue oder umformulierte Stellen. Entfallene Originalstellen stehen aufklappbar unter der jeweiligen Fassung.</p>
+      <section class="versions" aria-label="Textfassungen">
+      <details class="version" id="fassung-0" open>
+        <summary class="version-head"><span class="count">01</span><div><h2 id="titel-0">Ausgangstext</h2><p class="meta">Vom Nutzer bereitgestellt; Herkunft nicht dokumentiert.</p></div></summary>
+        <div class="version-body">
+          <p>In der heutigen Zeit spielt ein ausgewogener Alltag eine immer wichtigere Rolle. Viele Menschen wechseln ständig zwischen beruflichen Aufgaben, privaten Verpflichtungen und digitaler Erreichbarkeit. Dadurch entsteht der Eindruck, dass mehr Aktivität automatisch zu besseren Ergebnissen führt. Dabei wird häufig übersehen, dass Leistungsfähigkeit auch von Erholung, klaren Strukturen und bewussten Pausen abhängt.</p>
+          <p>Es ist wichtig zu betonen, dass Pausen nicht mit Unproduktivität gleichzusetzen sind. Sie helfen vielmehr dabei, Informationen zu verarbeiten, Fehler zu vermeiden und Entscheidungen ruhiger zu treffen. Das gilt für das Büro ebenso wie für das Homeoffice. In beiden Fällen kann ein fest eingeplanter Ausgleich den Unterschied machen. Wer regelmäßig innehält, bleibt oft konzentrierter als jemand, der ohne Unterbrechung weitermacht.</p>
+          <p>Nicht nur die Dauer einer Pause ist entscheidend, sondern auch ihre Qualität. Ein kurzer Spaziergang, ein Gespräch ohne Bildschirm oder einfach ein Moment der Ruhe kann bereits Wirkung zeigen. Gleichzeitig sollte niemand das eigene Wohlbefinden ausschließlich von einzelnen Maßnahmen abhängig machen. Ein nachhaltiger Ansatz verbindet kleine Routinen mit realistischer Planung und berücksichtigt berufliche wie private Anforderungen.</p>
+          <p>Zusammenfassend lässt sich sagen, dass ein stabiler Alltag kein Zufallsprodukt ist. Er entsteht durch wiederholte Entscheidungen, die sowohl Leistung als auch Erholung einbeziehen. Wer diese Balance im Blick behält, schafft bessere Voraussetzungen für Konzentration, Gesundheit und langfristige Motivation.</p>
+        </div>
+      </details>
+      <details class="version" id="fassung-1">
+        <summary class="version-head"><span class="count">02</span><div><h2 id="titel-1">Codex · Fassung 1</h2><p class="meta">KI-Ausgabe · genaue Modellversion nicht dokumentiert.</p></div></summary>
+        <div class="version-body">
+          <p>Viele Menschen wechseln <mark class="changed" title="Gegenüber dem Ausgangstext geändert">im Alltag </mark>zwischen beruflichen Aufgaben, privaten Verpflichtungen und digitaler Erreichbarkeit. <mark class="changed" title="Gegenüber dem Ausgangstext geändert">Dabei kann </mark>der <mark class="changed" title="Gegenüber dem Ausgangstext geändert">Eindruck entstehen, </mark>mehr Aktivität <mark class="changed" title="Gegenüber dem Ausgangstext geändert">führe </mark>automatisch zu besseren <mark class="changed" title="Gegenüber dem Ausgangstext geändert">Ergebnissen. Doch </mark>Leistungsfähigkeit <mark class="changed" title="Gegenüber dem Ausgangstext geändert">hängt </mark>auch von Erholung, klaren Strukturen und bewussten Pausen <mark class="changed" title="Gegenüber dem Ausgangstext geändert">ab.</mark></p>
+          <p>Pausen <mark class="changed" title="Gegenüber dem Ausgangstext geändert">sind </mark>nicht mit Unproduktivität <mark class="changed" title="Gegenüber dem Ausgangstext geändert">gleichzusetzen. </mark>Sie <mark class="changed" title="Gegenüber dem Ausgangstext geändert">helfen, </mark>Informationen zu verarbeiten, Fehler zu vermeiden und Entscheidungen ruhiger zu treffen. Das gilt <mark class="changed" title="Gegenüber dem Ausgangstext geändert">im </mark>Büro ebenso wie <mark class="changed" title="Gegenüber dem Ausgangstext geändert">im </mark>Homeoffice. In beiden Fällen kann ein fest eingeplanter Ausgleich <mark class="changed" title="Gegenüber dem Ausgangstext geändert">einen </mark>Unterschied machen. Wer regelmäßig innehält, bleibt oft konzentrierter als jemand, der ohne Unterbrechung weitermacht.</p>
+          <p><mark class="changed" title="Gegenüber dem Ausgangstext geändert">Dabei zählt nicht </mark>nur die Dauer einer <mark class="changed" title="Gegenüber dem Ausgangstext geändert">Pause, </mark>sondern auch ihre Qualität. Ein kurzer Spaziergang, ein Gespräch ohne Bildschirm oder ein Moment der Ruhe kann bereits Wirkung zeigen. <mark class="changed" title="Gegenüber dem Ausgangstext geändert">Das </mark>eigene Wohlbefinden <mark class="changed" title="Gegenüber dem Ausgangstext geändert">sollte jedoch nicht </mark>von <mark class="changed" title="Gegenüber dem Ausgangstext geändert">einer </mark>einzelnen <mark class="changed" title="Gegenüber dem Ausgangstext geändert">Maßnahme abhängen. </mark>Ein nachhaltiger Ansatz verbindet kleine Routinen mit realistischer Planung und berücksichtigt berufliche wie private Anforderungen.</p>
+          <p><mark class="changed" title="Gegenüber dem Ausgangstext geändert">Ein </mark>stabiler Alltag <mark class="changed" title="Gegenüber dem Ausgangstext geändert">entsteht nicht von selbst. </mark>Er <mark class="changed" title="Gegenüber dem Ausgangstext geändert">entwickelt sich </mark>durch wiederholte Entscheidungen, die Leistung <mark class="changed" title="Gegenüber dem Ausgangstext geändert">und </mark>Erholung einbeziehen. Wer diese Balance im Blick behält, schafft bessere Voraussetzungen für Konzentration, Gesundheit und langfristige Motivation.</p>
+          <details class="omissions"><summary>Entfallene oder ersetzte Originalstellen</summary>
+            <p><strong>Absatz 1:</strong> <del>In der heutigen Zeit spielt ein ausgewogener Alltag eine immer wichtigere Rolle.</del> · <del>ständig</del> · <del>Dadurch entsteht</del> · <del>Eindruck, dass</del> · <del>Ergebnissen führt. Dabei wird häufig übersehen, dass</del> · <del>abhängt.</del></p>
+            <p><strong>Absatz 2:</strong> <del>Es ist wichtig zu betonen, dass</del> · <del>gleichzusetzen sind.</del> · <del>helfen vielmehr dabei,</del> · <del>für das</del> · <del>für das</del> · <del>den</del></p>
+            <p><strong>Absatz 3:</strong> <del>Nicht</del> · <del>Pause ist entscheidend,</del> · <del>einfach</del> · <del>Gleichzeitig sollte niemand das</del> · <del>ausschließlich</del> · <del>Maßnahmen abhängig machen.</del></p>
+            <p><strong>Absatz 4:</strong> <del>Zusammenfassend lässt sich sagen, dass ein</del> · <del>kein Zufallsprodukt ist.</del> · <del>entsteht</del> · <del>sowohl</del> · <del>als auch</del></p>
+          </details>
+        </div>
+      </details>
+      <details class="version" id="fassung-2">
+        <summary class="version-head"><span class="count">03</span><div><h2 id="titel-2">Claude · Fassung 2</h2><p class="meta">KI-Ausgabe · genaue Modellversion nicht dokumentiert.</p></div></summary>
+        <div class="version-body">
+          <p><mark class="changed" title="Gegenüber dem Ausgangstext geändert">Ein </mark>ausgewogener Alltag <mark class="changed" title="Gegenüber dem Ausgangstext geändert">wird </mark>immer <mark class="changed" title="Gegenüber dem Ausgangstext geändert">wichtiger. </mark>Viele Menschen wechseln ständig zwischen beruflichen Aufgaben, privaten Verpflichtungen und digitaler Erreichbarkeit. Dadurch entsteht der Eindruck, mehr Aktivität <mark class="changed" title="Gegenüber dem Ausgangstext geändert">führe </mark>automatisch zu besseren <mark class="changed" title="Gegenüber dem Ausgangstext geändert">Ergebnissen. </mark>Dabei wird <mark class="changed" title="Gegenüber dem Ausgangstext geändert">oft </mark>übersehen, dass Leistungsfähigkeit auch von Erholung, klaren Strukturen und bewussten Pausen abhängt.</p>
+          <p>Pausen <mark class="changed" title="Gegenüber dem Ausgangstext geändert">sind </mark>nicht mit Unproduktivität <mark class="changed" title="Gegenüber dem Ausgangstext geändert">gleichzusetzen. </mark>Sie helfen dabei, Informationen zu verarbeiten, Fehler zu vermeiden und Entscheidungen ruhiger zu treffen. <mark class="changed" title="Gegenüber dem Ausgangstext geändert">Im Büro </mark>gilt das ebenso wie <mark class="changed" title="Gegenüber dem Ausgangstext geändert">im Homeoffice, und in </mark>beiden kann ein fest eingeplanter Ausgleich den <mark class="changed" title="Gegenüber dem Ausgangstext geändert">Ausschlag geben. </mark>Wer regelmäßig innehält, bleibt oft konzentrierter als jemand, der ohne Unterbrechung weitermacht.</p>
+          <p><mark class="changed" title="Gegenüber dem Ausgangstext geändert">Entscheidend ist nicht </mark>nur die Dauer einer <mark class="changed" title="Gegenüber dem Ausgangstext geändert">Pause, </mark>sondern auch ihre Qualität. Ein kurzer Spaziergang, ein Gespräch ohne Bildschirm oder einfach ein Moment der Ruhe <mark class="changed" title="Gegenüber dem Ausgangstext geändert">können schon wirken. Zugleich </mark>sollte niemand <mark class="changed" title="Gegenüber dem Ausgangstext geändert">sein </mark>Wohlbefinden <mark class="changed" title="Gegenüber dem Ausgangstext geändert">allein </mark>von einzelnen Maßnahmen abhängig machen. <mark class="changed" title="Gegenüber dem Ausgangstext geändert">Nachhaltig ist, was </mark>kleine Routinen mit realistischer Planung <mark class="changed" title="Gegenüber dem Ausgangstext geändert">verbindet </mark>und berufliche wie private <mark class="changed" title="Gegenüber dem Ausgangstext geändert">Anforderungen berücksichtigt.</mark></p>
+          <p><mark class="changed" title="Gegenüber dem Ausgangstext geändert">Ein </mark>stabiler Alltag <mark class="changed" title="Gegenüber dem Ausgangstext geändert">ist </mark>kein <mark class="changed" title="Gegenüber dem Ausgangstext geändert">Zufallsprodukt. </mark>Er entsteht durch wiederholte Entscheidungen, die Leistung <mark class="changed" title="Gegenüber dem Ausgangstext geändert">und </mark>Erholung <mark class="changed" title="Gegenüber dem Ausgangstext geändert">gleichermaßen </mark>einbeziehen. Wer diese Balance im Blick behält, schafft bessere Voraussetzungen für Konzentration, Gesundheit und langfristige Motivation.</p>
+          <details class="omissions"><summary>Entfallene oder ersetzte Originalstellen</summary>
+            <p><strong>Absatz 1:</strong> <del>In der heutigen Zeit spielt ein</del> · <del>eine</del> · <del>wichtigere Rolle.</del> · <del>dass</del> · <del>Ergebnissen führt.</del> · <del>häufig</del></p>
+            <p><strong>Absatz 2:</strong> <del>Es ist wichtig zu betonen, dass</del> · <del>gleichzusetzen sind.</del> · <del>vielmehr</del> · <del>Das</del> · <del>für</del> · <del>Büro</del> · <del>für das Homeoffice. In</del> · <del>Fällen</del> · <del>Unterschied machen.</del></p>
+            <p><strong>Absatz 3:</strong> <del>Nicht</del> · <del>Pause ist entscheidend,</del> · <del>kann bereits Wirkung zeigen. Gleichzeitig</del> · <del>das eigene</del> · <del>ausschließlich</del> · <del>Ein nachhaltiger Ansatz verbindet</del> · <del>berücksichtigt</del> · <del>Anforderungen.</del></p>
+            <p><strong>Absatz 4:</strong> <del>Zusammenfassend lässt sich sagen, dass ein</del> · <del>Zufallsprodukt ist.</del> · <del>sowohl</del> · <del>als auch</del></p>
+          </details>
+        </div>
+      </details>
+      <details class="version" id="fassung-3">
+        <summary class="version-head"><span class="count">04</span><div><h2 id="titel-3">Grok · Fassung 3</h2><p class="meta">KI-Ausgabe · genaue Modellversion nicht dokumentiert.</p></div></summary>
+        <div class="version-body">
+          <p><mark class="changed" title="Gegenüber dem Ausgangstext geändert">Viele Menschen wechseln in </mark>der heutigen Zeit ständig zwischen beruflichen Aufgaben, privaten Verpflichtungen und digitaler Erreichbarkeit. Dadurch entsteht der Eindruck, mehr Aktivität <mark class="changed" title="Gegenüber dem Ausgangstext geändert">führe </mark>automatisch zu besseren <mark class="changed" title="Gegenüber dem Ausgangstext geändert">Ergebnissen. Häufig übersehen wird, </mark>dass Leistungsfähigkeit auch von Erholung, klaren Strukturen und bewussten Pausen <mark class="changed" title="Gegenüber dem Ausgangstext geändert">abhängt. Ein ausgewogener Alltag wird damit immer wichtiger.</mark></p>
+          <p>Pausen <mark class="changed" title="Gegenüber dem Ausgangstext geändert">sind </mark>nicht mit Unproduktivität <mark class="changed" title="Gegenüber dem Ausgangstext geändert">gleichzusetzen. </mark>Sie <mark class="changed" title="Gegenüber dem Ausgangstext geändert">helfen, </mark>Informationen zu verarbeiten, Fehler zu vermeiden und Entscheidungen ruhiger zu treffen. Das gilt für das Büro ebenso wie für das Homeoffice. In beiden Fällen kann ein fest eingeplanter Ausgleich den Unterschied machen. Wer regelmäßig innehält, bleibt oft konzentrierter als jemand, der ohne Unterbrechung weitermacht.</p>
+          <p><mark class="changed" title="Gegenüber dem Ausgangstext geändert">Die </mark>Dauer einer Pause ist <mark class="changed" title="Gegenüber dem Ausgangstext geändert">nicht allein entscheidend. Ihre Qualität ist es ebenso. </mark>Ein kurzer Spaziergang, ein Gespräch ohne Bildschirm oder einfach ein Moment der Ruhe kann bereits Wirkung zeigen. Gleichzeitig sollte niemand das eigene Wohlbefinden ausschließlich von einzelnen Maßnahmen abhängig machen. Ein nachhaltiger Ansatz verbindet kleine Routinen mit realistischer Planung und berücksichtigt berufliche wie private Anforderungen.</p>
+          <p><mark class="changed" title="Gegenüber dem Ausgangstext geändert">Ein </mark>stabiler Alltag <mark class="changed" title="Gegenüber dem Ausgangstext geändert">ist </mark>kein <mark class="changed" title="Gegenüber dem Ausgangstext geändert">Zufallsprodukt. </mark>Er entsteht durch wiederholte Entscheidungen, die sowohl Leistung als auch Erholung einbeziehen. Wer diese Balance im Blick behält, schafft bessere Voraussetzungen für Konzentration, Gesundheit und langfristige Motivation.</p>
+          <details class="omissions"><summary>Entfallene oder ersetzte Originalstellen</summary>
+            <p><strong>Absatz 1:</strong> <del>In</del> · <del>spielt ein ausgewogener Alltag eine immer wichtigere Rolle. Viele Menschen wechseln</del> · <del>dass</del> · <del>Ergebnissen führt. Dabei wird häufig übersehen,</del> · <del>abhängt.</del></p>
+            <p><strong>Absatz 2:</strong> <del>Es ist wichtig zu betonen, dass</del> · <del>gleichzusetzen sind.</del> · <del>helfen vielmehr dabei,</del></p>
+            <p><strong>Absatz 3:</strong> <del>Nicht nur die</del> · <del>entscheidend, sondern auch ihre Qualität.</del></p>
+            <p><strong>Absatz 4:</strong> <del>Zusammenfassend lässt sich sagen, dass ein</del> · <del>Zufallsprodukt ist.</del></p>
+          </details>
+        </div>
+      </details>
+      </section>
+    </main>
+    <footer><div class="wrap foot"><span>© 2026 Olaf Wulf</span><a href="index.html#impressum">Impressum und Kontakt</a></div></footer>
+  </body>
+</html>
