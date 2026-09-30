@@ -35,8 +35,8 @@
       .hero { padding-block: clamp(4rem, 9vw, 7rem) 4rem; }
       .eyebrow { margin: 0 0 1rem; color: var(--accent); font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
       h1, h2, h3 { line-height: 1.15; letter-spacing: -.035em; }
-      h1 { max-width: 760px; margin: 0; font-size: clamp(2.7rem, 7vw, 5.2rem); }
-      .lead { max-width: 670px; margin: 1.6rem 0 0; font-size: clamp(1.1rem, 2.4vw, 1.35rem); color: var(--muted); }
+      h1 { margin: 0; font-size: clamp(2.7rem, 7vw, 5.2rem); }
+      .lead { margin: 1.6rem 0 0; font-size: clamp(1.1rem, 2.4vw, 1.35rem); color: var(--muted); }
       section { padding-block: 2.8rem; }
       h2 { margin: 0 0 1.5rem; font-size: clamp(1.7rem, 4vw, 2.3rem); }
       .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
@@ -45,7 +45,19 @@
       h3 { margin: .9rem 0; font-size: 1.75rem; }
       .card p { margin: 0; color: var(--muted); }
       .card p + p { margin-top: 1rem; }
-      .note { max-width: 720px; color: var(--muted); }
+      .note { color: var(--muted); }
+      .comparison-links { display: flex; flex-wrap: wrap; gap: .75rem; margin-block: 1.5rem; }
+      .comparison-links a {
+        display: inline-flex; align-items: center; min-height: 44px; max-width: 100%;
+        padding: .45rem .85rem; border: 1px solid var(--label-border); border-radius: 7px;
+        background: var(--label-bg); color: var(--label-ink); font-weight: 650;
+        text-decoration: none; box-shadow: 0 2px 5px rgb(24 49 43 / 8%);
+      }
+      .comparison-links a:hover { text-decoration: underline; box-shadow: 0 2px 7px rgb(24 49 43 / 15%); }
+      .comparison-links .rose { --label-bg: rgb(139 102 151 / 10%); --label-border: rgb(139 102 151 / 30%); --label-ink: #694783; }
+      .comparison-links .notebook { --label-bg: rgb(52 101 137 / 9%); --label-border: rgb(52 101 137 / 25%); --label-ink: #355a73; }
+      .comparison-links .pause { --label-bg: rgb(0 151 136 / 8%); --label-border: rgb(0 151 136 / 28%); --label-ink: #007f73; }
+      .comparison-links .coffee { --label-bg: rgb(166 91 35 / 9%); --label-border: rgb(166 91 35 / 28%); --label-ink: #934d1e; }
       footer { margin-top: 2rem; border-top: 1px solid var(--line); }
       .foot { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; padding-block: 1.8rem; color: var(--muted); font-size: .88rem; }
       @media (max-width: 640px) {
@@ -86,6 +98,7 @@
             <h3>QuellPass</h3>
             <p>Ein Link allein belegt noch nichts. QuellPass verlangt, die Quelle zu öffnen und die konkrete Aussage mit ihrem Inhalt abzugleichen. Passt der Zusammenhang? Gelten dieselben Bedingungen? Trägt die Quelle die ganze Aussage oder nur einen Teil?</p>
             <p>Eine unabhängige Gegenfrage soll auch dort suchen, wo die erste Recherche nicht hingesehen hat. Nicht zugängliche Quellen bleiben Kandidaten. Ungeklärtes wird als ungeklärt festgehalten, statt es durch einen weiteren Link scheinbar zu lösen. Das Verfahren verspricht keine endgültige Wahrheit; es soll nachvollziehbar machen, was einen Befund trägt und wo seine Grenzen liegen.</p>
+            <p><a href="https://github.com/olwulf-commits/quellpass">QuellPass-Repository auf GitHub</a></p>
           </article>
           <article class="card">
             <span class="step">Sprache und Gestaltung</span>
@@ -93,20 +106,29 @@
             <p>TextPass beginnt mit Fragen an den Text, nicht mit einer fertigen Deutung. Welche Aussage trägt ihn? Wie hängen die Nebenaussagen damit zusammen? Was leisten Ton, Satzbau und Reihenfolge? Daraus entsteht eine vorläufige Lesart, die auch mehrere Deutungen zulassen darf.</p>
             <p>Beim Überarbeiten dürfen Sätze verbunden, Absätze aufgeteilt und Gedanken anders angeordnet werden. Erhalten bleiben müssen die Aussagen, ihre Beziehungen und ihr Spielraum. Eigene Fakten, Beispiele oder Empfehlungen gehören nicht in einen reinen Überarbeitungsauftrag.</p>
             <p>Zwei vollständige Durchläufe sind vorgesehen: erst die Gestaltung, dann der Abgleich mit dem ganzen Ausgangstext. TextPass kann auch ausdrücklich beauftragte Neuentwürfe begleiten. Dort dürfen Gedanken entwickelt werden; ihre spätere Sachprüfung bleibt eine eigene Aufgabe.</p>
+            <p><a href="https://github.com/olwulf-commits/textpass">TextPass-Repository auf GitHub</a></p>
           </article>
         </div>
       </section>
 
       <section class="wrap" aria-labelledby="vergleich-titel">
         <h2 id="vergleich-titel">Was sich beim Überarbeiten verändert</h2>
-        <p class="note">Ein handgeschriebenes Notizbuch, Pausen im Alltag und Kaffee: Zu jedem Ausgangstext stehen drei KI-Bearbeitungen nebeneinander. Neue und umformulierte Wortfolgen sind farbig markiert. Entfallene oder ersetzte Originalstellen lassen sich je Fassung aufklappen. So lässt sich nicht nur die Lesbarkeit vergleichen, sondern auch beobachten, was erhalten bleibt, verschoben wird oder hinzukommt.</p>
+        <p class="note">Neu hinzugekommen ist die Rose. Daneben stehen das handgeschriebene Notizbuch, Pausen im Alltag und Kaffee: Zu jedem Ausgangstext lassen sich drei KI-Bearbeitungen vergleichen. Farbige Markierungen zeigen neue, umformulierte oder anders angeordnete Wortfolgen. Entfallene oder ersetzte Originalstellen sind aufklappbar. Die Markierungen helfen beim Vergleich; ob sich auch die Bedeutung verändert, zeigt erst die Lektüre im Zusammenhang.</p>
         <p class="note">Die Beispiele sind keine Rangliste. Beim Kaffeetext ist außerdem dokumentiert, dass die Modelle TextPass nach ihren späteren Auskünften unterschiedlich angewendet haben. Diese Selbstauskünfte sind keine unabhängige Prüfung. Die Ergebnisse zeigen einzelne Bearbeitungen unter den jeweils angegebenen Bedingungen, keine allgemeine Leistungsbewertung der Modelle.</p>
-        <p><a href="notizbuch-vergleich.html">Notizbuch vergleichen</a> · <a href="pausen-vergleich.html">Pausentext vergleichen</a> · <a href="kaffee-vergleich.html">Kaffeetext vergleichen</a></p>
+        <div class="comparison-links" aria-label="Textvergleiche">
+          <a class="rose" href="rose-vergleich.html">Neu: Rose vergleichen</a>
+          <a class="notebook" href="notizbuch-vergleich.html">Notizbuch vergleichen</a>
+          <a class="pause" href="pausen-vergleich.html">Pausentext vergleichen</a>
+          <a class="coffee" href="kaffee-vergleich.html">Kaffeetext vergleichen</a>
+        </div>
+        <p class="note">Beim Rosenvergleich stehen auch die nachgereichten Arbeitsauskünfte. Ein verfügbarer oder ausdrücklich aufgerufener Skill garantiert nicht, dass eine KI alle Schritte ausführt. Gleichzeitig sollen die Vorgaben keinen einheitlichen Klang erzeugen: Einen Anfang bewusst zu bewahren ist eine andere Entscheidung, als seine Gestaltung gar nicht zu prüfen.</p>
       </section>
 
       <section id="ansatz" class="wrap" aria-labelledby="ansatz-titel">
         <h2 id="ansatz-titel">Erst fragen, dann gestalten</h2>
         <p class="note">Was steht geschrieben? Wie ist es auszulegen? Und was verändert sich, wenn wir einem Satz mehr Gewicht geben?</p>
+        <p class="note">Deshalb enthalten die Anweisungen auch erklärende Prosa. Ich möchte nicht nur sagen, was die KI tun muss, sondern ihr den Zweck mitgeben: Fragen schützen vor einer vorschnellen Deutung, die Gestaltungsprüfung öffnet andere Wege durch den Text, und der zweite Durchlauf prüft, ob dabei Bedeutung verloren geht. Dieser Zusammenhang soll begründete Entscheidungen unterstützen, nicht bloß formales Abhaken. Er ist keine Garantie für die Umsetzung.</p>
+        <p class="note">Die KI entscheidet innerhalb des Auftrags, welche Wörter sie wählt, wie Sätze klingen, welche Gedanken sie verbindet und was sie ohne Bedeutungsverlust weglassen kann. Ein gelungener Anfang darf bleiben; ein neuer Aufbau kann ebenfalls überzeugen. Die Arbeitsschritte sind Pflicht, die sprachlichen Ergebnisse dürfen unterschiedlich sein. Die endgültige Entscheidung über Stimme und Veröffentlichung bleibt bei mir.</p>
         <p class="note">Diese Fragen gehören für mich zusammen. Ein Satz am Anfang kann einen ganzen Text rahmen. Derselbe Satz am Ende kann wie ein Urteil wirken. Deshalb reicht es nicht, einzelne Wörter auszutauschen und anschließend festzustellen, dass noch alle Aussagen vorhanden sind. Auch ihr Verhältnis zueinander zählt: Was trägt den Gedanken, was schränkt ihn ein, was bleibt bewusst offen?</p>
         <p class="note">Beim Lesen kommen Vorstellungen und Erinnerungen hinzu. Das Notizbuch kann an Papier, Handschrift oder einen vertrauten Geruch denken lassen, ohne all das ausdrücklich zu beschreiben. Solche Assoziationen helfen, eine mögliche Wirkung zu verstehen. Sie sind aber nicht automatisch Aussagen des Autors und dürfen ihm beim Überarbeiten nicht untergeschoben werden.</p>
         <p class="note">Auch ungenaue Sprache hat ihren Platz. „Viele“ ist keine Zahl, und eine vorsichtige Formulierung ist nicht schon deshalb mangelhaft. Zuerst möchte ich verstehen, welche Bedeutung der Zusammenhang zulässt. Ob eine prüfbare Behauptung ausreichend belegt ist, wird davon getrennt untersucht.</p>

@@ -44,6 +44,19 @@
       .foot { color:var(--muted); font-size:.88rem; }
       footer { border-top:1px solid var(--line); border-bottom:0; }
       @media(max-width:800px) { .versions { grid-template-columns:1fr; } }
+      .comparison-links { display: flex; flex-wrap: wrap; gap: .75rem; margin-block: 1.5rem; }
+      .comparison-links a {
+        display: inline-flex; align-items: center; min-height: 44px; max-width: 100%;
+        padding: .45rem .85rem; border: 1px solid var(--label-border); border-radius: 7px;
+        background: var(--label-bg); color: var(--label-ink); font-weight: 650;
+        text-decoration: none; box-shadow: 0 2px 5px rgb(24 49 43 / 8%);
+      }
+      .comparison-links a:hover { text-decoration: underline; box-shadow: 0 2px 7px rgb(24 49 43 / 15%); }
+      .comparison-links .rose { --label-bg: rgb(139 102 151 / 10%); --label-border: rgb(139 102 151 / 30%); --label-ink: #694783; }
+      .comparison-links .notebook { --label-bg: rgb(52 101 137 / 9%); --label-border: rgb(52 101 137 / 25%); --label-ink: #355a73; }
+      .comparison-links .pause { --label-bg: rgb(0 151 136 / 8%); --label-border: rgb(0 151 136 / 28%); --label-ink: #007f73; }
+      .comparison-links .coffee { --label-bg: rgb(166 91 35 / 9%); --label-border: rgb(166 91 35 / 28%); --label-ink: #934d1e; }
+      .comparison-links a[aria-current="page"] { border-width: 2px; text-decoration: underline; }
     </style>
   </head>
   <body>
@@ -52,8 +65,13 @@
       <div class="hero">
         <p class="eyebrow">TextPass · Vergleich</p>
         <h1>Das handgeschriebene Notizbuch</h1>
-        <p class="lead">Ein Ausgangstext, drei KI-Bearbeitungen. Öffne die Fassungen einzeln oder gleichzeitig und vergleiche, was verändert wurde und was stehen blieb. <a href="pausen-vergleich.html">Zum zweiten Vergleich über Pausen</a>.</p>
+        <p class="lead">Ein Ausgangstext, drei KI-Bearbeitungen. Öffne die Fassungen einzeln oder gleichzeitig und vergleiche, was verändert wurde und was stehen blieb.</p>
       </div>
+      <nav class="comparison-links" aria-label="Weitere Textvergleiche">
+        <a class="rose" href="rose-vergleich.html">Rose vergleichen</a>
+        <a class="pause" href="pausen-vergleich.html">Pausentext vergleichen</a>
+        <a class="coffee" href="kaffee-vergleich.html">Kaffeetext vergleichen</a>
+      </nav>
       <p class="legend"><mark class="changed">Gelb markiert</mark> sind neue oder umformulierte Stellen. Entfallene Originalstellen stehen aufklappbar unter der jeweiligen Fassung.</p>
       <section class="versions" aria-label="Textfassungen">
       <details class="version" id="fassung-0" open>
