@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Dokumentierter Claude-Arbeitslauf: TextPass-Entwurf, QuellPass-Aussagenprüfung, Gegenprüfung der Korrekturen und erneute Textüberarbeitung."><meta name="author" content="Olaf Wulf"><title>Work-Life-Balance: dokumentierter Prüfablauf — Olaf Wulf</title><style>
+      :root {
+        color-scheme: light;
+        --ink: #18312b;
+        --muted: #4f655d;
+        --paper: #f6f5ef;
+        --card: #fffefa;
+        --line: #cbd6cd;
+        --accent: #237052;
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      a { color: #155c42; text-underline-offset: .2em; }
+      a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+      .wrap { width: min(100% - 2.5rem, 960px); margin-inline: auto; }
+      header { border-bottom: 1px solid var(--line); }
+      .nav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 1.1rem; }
+      .brand { font-weight: 700; letter-spacing: -.02em; text-decoration: none; color: var(--ink); }
+      nav { display: flex; flex-wrap: wrap; gap: .5rem 1.2rem; font-size: .9rem; }
+      .hero { padding-block: clamp(4rem, 9vw, 7rem) 4rem; }
+      .eyebrow { margin: 0 0 1rem; color: var(--accent); font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+      h1, h2, h3 { line-height: 1.15; letter-spacing: -.035em; }
+      h1 { margin: 0; font-size: clamp(2.7rem, 7vw, 5.2rem); }
+      .lead { margin: 1.6rem 0 0; font-size: clamp(1.1rem, 2.4vw, 1.35rem); color: var(--muted); }
+      section { padding-block: 2.8rem; }
+      h2 { margin: 0 0 1.5rem; font-size: clamp(1.7rem, 4vw, 2.3rem); }
+      .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+      .card { min-height: 260px; padding: clamp(1.4rem, 3vw, 2rem); background: var(--card); border: 1px solid var(--line); border-radius: 18px; }
+      .card .step { color: var(--accent); font-size: .82rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+      h3 { margin: .9rem 0; font-size: 1.75rem; }
+      .card p { margin: 0; color: var(--muted); }
+      .card p + p { margin-top: 1rem; }
+      .note { color: var(--muted); }
+      .comparison-links { display: flex; flex-wrap: wrap; gap: .75rem; margin-block: 1.5rem; }
+      .comparison-links a {
+        display: inline-flex; align-items: center; min-height: 44px; max-width: 100%;
+        padding: .45rem .85rem; border: 1px solid var(--label-border); border-radius: 7px;
+        background: var(--label-bg); color: var(--label-ink); font-weight: 650;
+        text-decoration: none; box-shadow: 0 2px 5px rgb(24 49 43 / 8%);
+      }
+      .comparison-links a:hover { text-decoration: underline; box-shadow: 0 2px 7px rgb(24 49 43 / 15%); }
+      .comparison-links .rose { --label-bg: rgb(139 102 151 / 10%); --label-border: rgb(139 102 151 / 30%); --label-ink: #694783; }
+      .comparison-links .notebook { --label-bg: rgb(52 101 137 / 9%); --label-border: rgb(52 101 137 / 25%); --label-ink: #355a73; }
+      .comparison-links .pause { --label-bg: rgb(0 151 136 / 8%); --label-border: rgb(0 151 136 / 28%); --label-ink: #007f73; }
+      .comparison-links .coffee { --label-bg: rgb(166 91 35 / 9%); --label-border: rgb(166 91 35 / 28%); --label-ink: #934d1e; }
+      footer { margin-top: 2rem; border-top: 1px solid var(--line); }
+      .foot { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; padding-block: 1.8rem; color: var(--muted); font-size: .88rem; }
+      @media (max-width: 640px) {
+        .nav { align-items: flex-start; flex-direction: column; }
+        .grid { grid-template-columns: 1fr; }
+        .card { min-height: 0; }
+      }
+      @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    
+      .case-hero { padding-bottom: 2.5rem; }
+      .case-hero h1 { font-size: clamp(2.7rem, 7vw, 4.6rem); }
+      .case-meta { margin-top: 2rem; padding: 1.4rem 1.6rem; border: 1px solid var(--line); border-radius: 18px; background: var(--card); color: var(--muted); font-size: .95rem; }
+      .case-meta p { margin: 0; } .case-meta p + p { margin-top: .8rem; }
+      .steps { margin: 0; padding: 0; list-style: none; counter-reset: step; }
+      .steps > li { position: relative; padding: 0 0 2rem 3.7rem; counter-increment: step; }
+      .steps > li::before { content: counter(step, decimal-leading-zero); position: absolute; left: 0; top: .05rem; color: var(--accent); font-weight: 700; font-size: 1.05rem; }
+      .steps > li + li { padding-top: 1.4rem; border-top: 1px solid var(--line); }
+      .steps > li + li::before { top: 1.45rem; }
+      .steps h3 { margin: 0 0 .65rem; font-size: 1.4rem; }
+      .steps p { margin: .65rem 0 0; color: var(--muted); }
+      .versions { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; align-items: start; }
+      .version { padding: clamp(1.4rem,3vw,2rem); background: var(--card); border: 1px solid var(--line); border-radius: 18px; }
+      .version-head { display: flex; align-items: flex-start; gap: 1rem; cursor: pointer; list-style: none; }
+      .version-head::-webkit-details-marker { display: none; }
+      .version-head::after { content: '+'; margin-left: auto; color: var(--accent); font-size: 1.7rem; line-height: 1; }
+      .version[open] .version-head { padding-bottom: 1rem; border-bottom: 1px solid var(--line); }
+      .version[open] .version-head::after { content: '−'; }
+      .version-head h3 { margin: 0; font-size: 1.6rem; }
+      .count { color: var(--accent); font-size: .8rem; font-weight: 700; letter-spacing: .1em; }
+      .meta { margin: .35rem 0 0; color: var(--muted); font-size: .84rem; }
+      .version-body p { margin: 1.4rem 0 0; }
+      .version-body h3 { margin-top: 1.4rem; font-size: 1.25rem; }
+      mark { color: var(--ink); padding: .04em .08em; border-radius: .18em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+      mark.changed { background: #ffe17a; } mark.moved { background: #d6e6f3; } mark.issue { background: #f6d5c8; }
+      sup.tag { color: #8a3a22; font-size: .7rem; font-weight: 700; margin-left: .15em; }
+      .legend { margin: 1rem 0 1.2rem; color: var(--muted); font-size: .94rem; }
+      .omissions { margin-top: 1.4rem; padding: 1rem 1.1rem; background: #faf7ed; border: 1px solid var(--line); border-radius: 10px; }
+      summary { cursor: pointer; } summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+      .omissions summary { color: var(--ink); font-weight: 650; } .omissions p { margin: .8rem 0 0; font-size: .93rem; }
+      .omissions del { background: #f6d5c8; color: #552b21; padding: .03em .06em; }
+      .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 18px; background: var(--card); }
+      table { width: 100%; border-collapse: collapse; font-size: .93rem; }
+      th,td { padding: .8rem 1rem; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+      th { color: var(--accent); font-size: .8rem; } tr:last-child td { border-bottom: 0; }
+      .gate { display: inline-block; padding: .15rem .45rem; border-radius: 5px; font-size: .78rem; font-weight: 700; white-space: nowrap; }
+      .gate.ok { background: #dcefe4; color: #1d5a3f; } .gate.rev { background: #fff0c2; color: #6b5200; } .gate.stop { background: #f6d5c8; color: #7a2f1c; }
+      .sources { padding-left: 1.2rem; color: var(--muted); font-size: .95rem; } .sources li { margin: .65rem 0; }
+      .narrow { max-width: none; } .case-main a { overflow-wrap: anywhere; }
+      @media (max-width: 700px) { .versions { grid-template-columns: 1fr; } .steps > li { padding-left: 2.7rem; } .case-meta { padding: 1.2rem; } }
+
+.assessment-original { margin-top: 1.5rem; } .assessment-original h3 { font-size: 1.4rem; margin: 1.8rem 0 .7rem; } .assessment-original h4 { font-size: 1.15rem; margin: 1.6rem 0 .6rem; } .assessment-original h5, .assessment-original h6 { font-size: 1rem; line-height: 1.5; margin: 1.2rem 0 .5rem; } .assessment-original p, .assessment-original li { font-size: .95rem; } .assessment-original li { margin-block: .6rem; } .assessment-original hr { border: 0; border-top: 1px solid var(--line); margin-block: 1.5rem; }
+</style></head><body><header><div class="wrap nav"><a class="brand" href="index.html">Olaf Wulf</a><nav aria-label="Seitennavigation"><a href="#ablauf-titel">Ablauf</a><a href="#fassungen-titel">Artikelvergleich</a><a href="#grenzen-titel">Grenzen</a><a href="index.html">Startseite</a></nav></div></header>
+<main class="wrap case-main">
+<div class="hero case-hero"><p class="eyebrow">Fallstudie · Claude · 1. Oktober 2026</p><h1>Mein Versuch: ein Claude-Artikel im Prüfverfahren</h1><p class="lead">Hier dokumentiere ich meinen Arbeitslauf mit einem Artikel über Work-Life-Balance: vom ersten TextPass-Entwurf über die QuellPass-Prüfung bis zur Überarbeitung und erneuten Gegenprüfung. Dabei wurden auch Fehler in den vorgeschlagenen Korrekturen gefunden.</p>
+<div class="case-meta"><p><strong>Herkunft der Artikel:</strong> Original und Neufassung stammen von Claude (Anthropic) und bleiben hier einschließlich ihrer Markierungen unverändert. Für diesen Versuch habe ich Claude Opus 5.5 verwendet. Für die Neufassung ist der 1. Oktober 2026 dokumentiert.</p><p><strong>Herkunft dieser Beschreibung:</strong> Die ursprüngliche Fallbeschreibung stammt ebenfalls von Claude. Aufbau, Ablaufbeschreibung und Gestaltung dieser Seite wurden von Codex (OpenAI) in meinem Auftrag überarbeitet. Ich habe die Aufträge erteilt, das Verfahren bestimmt und die Freigaben gegeben.</p><p><strong>Grundlage:</strong> Für diese Seite habe ich die Claude-Dokumentation und meine ergänzenden Angaben als Material übergeben. Die vollständige Belegakte habe ich für diese redaktionelle Überarbeitung nicht mitgegeben. Die beschriebenen Prüfungen sind Ergebnisse des damaligen Laufs; eine eigene Abnahme seiner vollständigen Skill-Ausführung ist damit nicht verbunden.</p></div></div>
+<section aria-labelledby="ablauf-titel"><h2 id="ablauf-titel">So verlief mein Auftrag</h2><p class="note">Der erste Entwurf entstand ohne Recherchematerial und Quellen. Das unterscheidet diesen Versuch von meiner regulären Reihenfolge: gewöhnliche Recherche, Artikel mit TextPass, danach QuellPass und die erforderlichen Korrekturen samt abschließender Textüberarbeitung.</p>
+<ol class="steps">
+<li><h3>TextPass: den ersten Artikel schreiben</h3><p>Ich ließ Claude den ursprünglichen Work-Life-Balance-Text mit TextPass schreiben. Dieser Entwurf war der Bezugspunkt für die anschließende Aussagenprüfung.</p></li>
+<li><h3>QuellPass: Aussagen prüfen und Gegenbefunde suchen</h3><p>Für die Prüfung meines Auftrags wurden vor der Suche fünf Aussagegruppen festgelegt. Die vierte Gruppe wurde später in zwei Prüfeinheiten aufgeteilt; deshalb enthält die Befundtabelle sechs Zeilen.</p><p>Spur A suchte Belege. Spur B entwickelte eigene Gegenfragen und suchte getrennt nach Widerlegungen oder Einschränkungen. Der Belegprüfer, Agent C, las Fundstellen erneut am Original und bereitete für die einzelnen Aussagen die Urteile FREIGEBEN, ÜBERARBEITEN oder SPERREN vor.</p></li>
+<li><h3 id="gegen-titel">Gegenprüfung: die Korrekturen selbst kontrollieren</h3><p>In meinem Prüfablauf erhielt Agent D die Befunde und verglich sie mit der Belegakte. Dabei beanstandete er neue Angaben in den Änderungsvorschlägen: eine Berufsbezeichnung ohne Grundlage in der Akte; „Elternzeit“ statt amerikanischem Mutterschaftsurlaub; und „vorbildlich“, obwohl die Quelle nur von genau eingehaltenen Regeln sprach.</p><p>Ein weiterer Vorschlag brachte die gesperrte Kausalaussage als Verallgemeinerung zurück. Auch „ältere Kämpfe“ für Feierabend und Urlaub war durch die benannten Belege nicht gedeckt; als erkämpft war nur der Achtstundentag belegt. Diese Stellen wurden berichtigt, bevor der Befund als prüffähig galt.</p><p>Die Gegenprüfung fand damit Fehler, die erst beim Korrigieren entstanden waren. Diesen konkreten Befund halte ich aus meinem Versuch fest.</p></li>
+<li><h3>TextPass: den Artikel überarbeiten</h3><p>Auf dieser Grundlage ließ ich Claude die Neufassung schreiben. Die Dokumentation nennt Fragenraster und zwei redaktionelle Durchläufe. Änderungen sollten auf den freigegebenen Aussagen beruhen; die Grenzen der Quellenprüfung blieben bestehen.</p></li>
+<li><h3>Die Neufassung erneut gegenprüfen</h3><p>Die zweite Gegenprüfung verglich die Neufassung Satz für Satz mit Entwurf und Belegakte. Sie fand noch einen Einzelfall ohne ausdrückliche Kennzeichnung, ein überzähliges „alle“ und eine Zusammenschau mehrerer Studien, die wie ein einzelnes Studienergebnis klang. Auch diese Punkte wurden korrigiert.</p></li>
+</ol></section>
+<section aria-labelledby="befund-titel"><h2 id="befund-titel">Die dokumentierten Aussagenurteile</h2><p class="note">In der folgenden Tabelle habe ich die Befunde der ursprünglichen Claude-Dokumentation übernommen. Geprüft wurden ausgewählte Sachaussagen. Wertungen wie „Wertlos ist die Idee trotzdem nicht“ und die Titelthese „Illusion“ erhielten kein entsprechendes Tatsachenurteil.</p><div class="table-wrap">
+          <table>
+            <thead><tr><th>Aussage im Entwurf</th><th>Befund</th><th>Urteil</th></tr></thead>
+            <tbody>
+              <tr><td><strong>T1</strong> Arbeit und Privatleben wirken wechselseitig aufeinander, auch von Tag zu Tag.</td><td>Belegt durch Tagebuchstudien in beide Richtungen und eine Meta-Analyse. Die Wirkung in den jeweils anderen Bereich ist schwächer als im eigenen. „Ständig“ bleibt ein Stilmittel, keine Häufigkeitsangabe.</td><td><span class="gate ok">FREIGEBEN</span></td></tr>
+              <tr><td><strong>T2</strong> „So läuft es selten.“</td><td>Für „selten“ fand sich kein Beleg. Gegenbefund: Über Monate und Jahre ist das Konfliktniveau weitgehend stabil, von Tag zu Tag schwankt es.</td><td><span class="gate rev">ÜBERARBEITEN</span></td></tr>
+              <tr><td><strong>T3</strong> Das Balance-Ideal führt zu Versagenserleben.</td><td>Kein empirischer Beleg für die Ursache, nur ein Erfahrungsbericht. Eine niederländische Studie erklärt Schuld bei Müttern mit verinnerlichten Rollenbildern. Haltbar ist nur die Zuschreibung an eine Person.</td><td><span class="gate rev">ÜBERARBEITEN</span></td></tr>
+              <tr><td><strong>T4a</strong> Feierabend und Urlaub als Grenzen, „wo vorher keine waren“.</td><td>Widerlegt: „Feierabend“ ist seit dem 16. Jahrhundert belegt, das Bundesurlaubsgesetz stammt von 1963.</td><td><span class="gate rev">ÜBERARBEITEN</span></td></tr>
+              <tr><td><strong>T4b</strong> Erreichbarkeit als neu benannte Grenze.</td><td>Keine Belege in beiden Suchspuren.</td><td><span class="gate stop">SPERREN</span></td></tr>
+              <tr><td><strong>T5</strong> Die Waage-Metapher wird in der Fachliteratur kritisiert.</td><td>Belegt, ausdrücklich bei Cohen u. a. 2009. Andere Arbeiten kritisieren eher zu enge Begriffe von „Arbeit“ und „Leben“.</td><td><span class="gate ok">FREIGEBEN</span></td></tr>
+            </tbody>
+          </table>
+        </div></section>
+<section aria-labelledby="fassungen-titel">
+        <div class="narrow">
+          <h2 id="fassungen-titel">Vorher und nachher</h2>
+          <p class="legend"><mark class="issue">Rot markiert</mark> sind im Entwurf die beanstandeten Aussagen (T2–T4 wie in der Tabelle unten). In der Neufassung sind <mark class="changed">gelb</mark> neue oder umformulierte und <mark class="moved">blau</mark> verschobene Stellen markiert. Entfallene Stellen sind aufklappbar.</p>
+        </div>
+        <div class="versions">
+          <details class="version" open>
+            <summary class="version-head"><span class="count">01</span><div><h3>Entwurf</h3><p class="meta">Claude mit TextPass · ohne Quellenprüfung</p></div></summary>
+            <div class="version-body">
+              <h3>Warum Work-Life-Balance eine Illusion ist</h3>
+              <p>Schon das Wort führt in die Irre. Wer von Work-Life-Balance spricht, denkt an eine Waage: auf der einen Schale die Arbeit, auf der anderen das Leben. Als fände Arbeit irgendwo außerhalb des Lebens statt, in einer Zone, die man betritt und wieder verlässt wie ein Büro.</p>
+              <p>Doch die Stunden im Job sind Lebenszeit. Ein schlechter Montag sitzt abends mit am Küchentisch, ein krankes Kind reist morgens mit ins Meeting. Die beiden Schalen berühren sich ständig.</p>
+              <p>Das Bild verspricht noch mehr: Gleichgewicht als Zustand, den man einmal erreicht und dann hält. <mark class="issue">So läuft es selten.</mark><sup class="tag">T2</sup> Es gibt Wochen, in denen ein Projekt fast alles verlangt, und Monate, in denen Familie, Gesundheit oder schlicht Erschöpfung Vorrang haben. Wer jeden Tag die Mitte sucht, misst sich an einem Ideal, das sich nicht einlösen lässt, <mark class="issue">und erlebt jede Schieflage als persönliches Versagen.</mark><sup class="tag">T3</sup></p>
+              <p>Wertlos ist die Idee trotzdem nicht. Sie hat <mark class="issue">Grenzen benannt, wo vorher keine waren: Feierabend, Erreichbarkeit, Urlaub ohne Laptop.</mark><sup class="tag">T4</sup> Diese Grenzen bleiben nötig. Sie sind Werkzeuge, kein Endzustand.</p>
+              <p>Ehrlicher wäre eine andere Frage. Nicht: Ist mein Leben im Gleichgewicht? Sondern: Stimmt die Richtung, und weiß ich, wofür ich gerade mehr gebe – und wie lange?</p>
+            </div>
+          </details>
+
+          <details class="version" open>
+            <summary class="version-head"><span class="count">02</span><div><h3>Neufassung</h3><p class="meta">Claude Opus 5.5 mit TextPass · nur QuellPass-freigegebene Aussagen</p></div></summary>
+            <div class="version-body">
+              <h3>Warum Work-Life-Balance eine Illusion ist</h3>
+              <p>Schon das Wort führt in die Irre. Wer von Work-Life-Balance spricht, denkt an eine Waage: auf der einen Schale die Arbeit, auf der anderen das Leben. Als fände Arbeit irgendwo außerhalb des Lebens statt, in einer Zone, die man betritt und wieder verlässt wie ein Büro.</p>
+              <p>Doch die Stunden im Job sind Lebenszeit. Ein schlechter Montag sitzt abends mit am Küchentisch, ein krankes Kind reist morgens mit ins Meeting. Die beiden Schalen berühren sich ständig.</p>
+              <p>Das Bild verspricht noch mehr: Gleichgewicht als Zustand, den man einmal erreicht und dann hält. Es gibt Wochen, in denen ein Projekt fast alles verlangt, und Monate, in denen Familie, Gesundheit oder schlicht Erschöpfung Vorrang haben. <mark class="changed">In Studien, die unterschiedlich lange Zeiträume betrachten, ergibt sich ein doppelter Befund: Von Tag zu Tag schwankt, wie stark die Arbeit ins Privatleben hineinwirkt. Über Monate und Jahre bleibt das Ausmaß dieses Konflikts dagegen weitgehend stabil, wenn auch nicht unveränderlich.</mark></p>
+              <p><mark class="moved">Wer jeden Tag die Mitte sucht, misst sich an einem Ideal, das sich nicht einlösen lässt.</mark> <mark class="changed">Die US-Ärztin Tessie October beschreibt ihren eigenen Fall: Sie hielt sich im Mutterschaftsurlaub streng an die Regeln und blieb trotzdem von Schuld erfüllt. Ihr Schluss: Es sei sinnlos, Arbeit und Leben zu trennen.</mark></p>
+              <p>Wertlos ist die Idee trotzdem nicht. Sie hat Grenzen <mark class="changed">neu verteidigt, die es längst gab – den Feierabend, den gesetzlichen Anspruch auf bezahlten Urlaub – und sie gegen die Entgrenzung flexibler Arbeit gestellt.</mark> Diese Grenzen bleiben nötig. Sie sind Werkzeuge, kein Endzustand.</p>
+              <p>Ehrlicher wäre eine andere Frage. Nicht: Ist mein Leben im Gleichgewicht? Sondern: Stimmt die Richtung, und weiß ich, wofür ich gerade mehr gebe – und wie lange?</p>
+              <details class="omissions"><summary>Entfallene oder ersetzte Stellen</summary>
+                <p><del>So läuft es selten.</del> · <del>und erlebt jede Schieflage als persönliches Versagen.</del> · <del>benannt, wo vorher keine waren: Feierabend, Erreichbarkeit, Urlaub ohne Laptop.</del></p>
+              </details>
+            </div>
+          </details>
+        </div>
+      </section>
+<section aria-labelledby="blind-titel"><h2 id="blind-titel">Ergänzend: die Einschätzung der Textherkunft</h2>
+<p class="note">Ich ließ Gemini die Neufassung beurteilen, ohne ihre Herkunft offenzulegen. Meine Frage lautete kurz: „Mensch oder KI?“ Für die Beurteilung verwendete ich Gemini 3.6 Flash. Die vollständige Antwort habe ich hier aufgenommen. Die vollständige Testnachricht und das Datum der Beurteilung sind bislang nicht dokumentiert.</p>
+<p class="note">Gemini hält einen menschlichen Kernentwurf für wahrscheinlich und lässt KI-Unterstützung beim Lektorat ausdrücklich offen. Als Indizien nennt die Beurteilung Bildsprache, Satzrhythmus und den Übergang zum Fallbeispiel. Beide Artikelfassungen habe ich jedoch von Claude erstellen lassen: Die Bilder stehen bereits im ersten KI-Entwurf, das Fallbeispiel wurde aus der Belegarbeit übernommen.</p>
+<p class="note">Die Antwort bewertet auch die Argumentationslogik und Ausgewogenheit des Textes. Einen Abgleich seiner Sachaussagen mit Originalquellen enthält sie nicht. Die Herkunftseinschätzung bleibt ein Einzelfall; daraus folgt weder ein allgemeiner Wirksamkeitsnachweis für TextPass und QuellPass noch ein allgemeines Urteil über KI-Erkennung. Technische Wasserzeichen habe ich in diesem Test nicht untersucht.</p>
+<details class="omissions"><summary>Vollständige Beurteilung durch Gemini · unveränderter Wortlaut</summary><div class="assessment-original"><h3>TL;DR</h3>
+<p>Der Text veranschaulicht plausibel, warum der Begriff „Work-Life-Balance“ irreführend ist, und fordert stattdessen eine bewusste Richtungsentscheidung im Leben. Die sprachliche Analyse zeigt starke Anzeichen für eine <strong>menschliche Urheberschaft</strong>, wenngleich eine KI als Assistent (z. B. beim Lektorat) nicht völlig ausgeschlossen werden kann.</p>
+<hr>
+<h4>Rolle, Aufgabe &amp; Format (Analyse)</h4>
+<ul>
+<li><strong>Rolle:</strong> Kreativer Stratege &amp; Text-Analyst</li>
+<li><strong>Aufgabe:</strong> Neutrale Prüfung des Textes auf Inhalt/Struktur sowie Einschätzung, ob der Text von einem Menschen oder einer KI verfasst wurde.</li>
+<li><strong>Format:</strong> Strukturierte Antwort (Einleitung, Hauptteil, Fazit).</li>
+</ul>
+<hr>
+<h4>Einleitung</h4>
+<p>Der vorgelegte Text hinterfragt das klassische Konzept der „Work-Life-Balance“. Er argumentiert, dass die sprachliche Trennung von „Arbeit“ und „Leben“ eine falsche Metapher erzeugt, da Arbeitszeit ebenfalls verstrichene Lebenszeit ist. Im Folgenden wird der Text inhaltlich neutral bewertet sowie stilistisch auf typische Merkmale menschlicher versus KI-generierter Sprache analysiert.</p>
+<hr>
+<h4>Hauptteil</h4>
+<h5>1. Neutrale inhaltliche Prüfung</h5>
+<ul>
+<li><strong>Argumentationslogik:</strong> Die These ist schlüssig und rhetorisch stark aufgebaut. Die Kritik an der „Waage-Metapher“ wird plausibel begründet: Arbeit und Privatleben lassen sich in der Praxis nicht isolieren.</li>
+<li><strong>Ausgewogenheit:</strong> Der Text verfällt nicht in ein extremes Dogma. Er erkennt den historischen und praktischen Wert der Work-Life-Balance an (Schutz von Feierabend und Urlaub), weist aber präzise auf die Grenzen dieses Konzepts hin.</li>
+<li><strong>Konstruktiver Lösungsansatz:</strong> Am Ende wird ein konkreter Perspektivwechsel angeboten (Frage nach der Richtung und den Prioritäten statt nach starrer Gleichverteilung).</li>
+</ul>
+<h5>2. Analyse: Mensch oder KI?</h5>
+<h6>Indizien für einen menschlichen Urheber (Überwiegend)</h6>
+<ol>
+<li><strong>Metaphorik und Bildsprache:</strong> Formulierungen wie <em>„Ein schlechter Montag sitzt abends mit am Küchentisch“</em> oder <em>„ein krankes Kind reist morgens mit ins Meeting“</em> sind sehr empathisch, bildhaft und lebensnah gegriffen. Solche Konkretisierungen wirken organisch und persönlich.</li>
+<li><strong>Rhythmus und Satzbau:</strong> Der Text nutzt eine dynamische Mischung aus kurzen, pointierten Sätzen (<em>„Doch die Stunden im Job sind Lebenszeit.“</em>) und komplexeren Gedankengängen. Standard-KIs neigen oft zu gleichförmigeren Satzstrukturen.</li>
+<li><strong>Synthese von Beispielen und Reflexion:</strong> Der fließende Übergang von abstrakten Konzepten zu einem konkreten Fallbeispiel (US-Ärztin Tessie October) und die differenzierte Fazit-Frage entsprechen dem typischen Stil von Essays oder Kolumnen etablierter Journalistinnen und Journalisten.</li>
+</ol>
+<h6>Potenzielle KI-Einflüsse</h6>
+<ul>
+<li>Der Text ist rhetorisch sehr geschliffen und strukturiert. Es ist denkbar, dass eine KI zur Überarbeitung, Kürzung oder stilistischen Feinschliff-Unterstützung genutzt wurde. Der Kernentwurf und die emotionale Bildsprache tragen jedoch eine deutliche menschliche Handschrift.</li>
+</ul>
+<hr>
+<h4>Fazit</h4>
+<p>Der Text überzeugt durch eine neutrale, differenzierte Argumentation mit hohem Mehrwert. Nach sprachlicher und struktureller Analyse spricht sehr viel dafür, dass der Text von einem <strong>menschlichen Autor</strong> (beispielsweise für einen Kolumnen- oder Blogbeitrag) verfasst wurde. Selbst wenn KI Werkzeuge zur Korrektur genutzt wurden, stammt die inhaltliche Tiefe und die bildhafte Sprache aus menschlicher Feder.</p></div></details></section>
+<section aria-labelledby="grenzen-titel"><h2 id="grenzen-titel">Was in diesem Lauf offenblieb</h2><ul class="sources">
+<li><strong>Zugang zu Studien:</strong> Viele Arbeiten waren nur als Zusammenfassung zugänglich, weil Verlagsseiten den Abruf blockierten. Die dokumentierten Freigaben gelten auf dieser Ebene; ungelesene Volltextdetails und Effektgrößen sind davon nicht gedeckt.</li>
+<li><strong>Hochschulkatalog:</strong> Die Gegenspur prüfte ihn erst nach ihrer ersten Suche. Die Dokumentation bewertet ihre Nullergebnisse deshalb als weniger belastbar.</li>
+<li><strong>Semantischer Vergleich:</strong> Ein entsprechendes Werkzeug stand nicht zur Verfügung. Die Relevanzentscheidungen blieben Modellurteile.</li>
+<li><strong>Wochen und Monate:</strong> Die betreffende Passage erhielt keine eigene Prüfung. Neben dem Langzeitbefund kann sie widersprüchlich wirken; die ursprüngliche Fallbeschreibung ordnet sie nicht als logischen Widerspruch ein.</li>
+<li><strong>Erfahrungsbericht:</strong> Für die zugespitzte Aussage zum Versagenserleben gab es keinen belegten gleichwertigen Ersatz. Tessie October beschreibt sich am Ende ihres Beitrags selbst wieder als „in balance“. Die Neufassung verwendet nur einen Teil ihres Gedankengangs.</li>
+</ul><p class="note">Claude hat mir angeboten, die neu formulierte Ablaufbeschreibung später gegen die vollständige Belegakte zu lesen. Diese zusätzliche Prüfung habe ich bislang nicht durchführen lassen.</p></section>
+<section  aria-labelledby="quellen-titel">
+        <h2 id="quellen-titel">Quellen der Neufassung</h2>
+        <ul class="sources">
+          <li>Martinez-Corts, Demerouti, Bakker, Boz (2015), Journal of Occupational Health Psychology. <a href="https://doi.org/10.1037/a0038661">doi.org/10.1037/a0038661</a></li>
+          <li>Du, Derks, Bakker (2018): Daily spillover from family to work. Journal of Occupational Health Psychology 23(2). <a href="https://doi.org/10.1037/ocp0000073">doi.org/10.1037/ocp0000073</a></li>
+          <li>Amstad, Meier, Fasel, Elfering, Semmer (2011): Meta-Analyse zu Work-Family-Konflikt. Journal of Occupational Health Psychology 16(2). <a href="https://doi.org/10.1037/a0022170">doi.org/10.1037/a0022170</a></li>
+          <li>Smith, Wayne, Matthews, Lance, Griggs, Pattie (2022): Stability and change in levels of work–family conflict. Journal of Occupational and Organizational Psychology 95(1). <a href="https://doi.org/10.1111/joop.12372">doi.org/10.1111/joop.12372</a></li>
+          <li>Rantanen, Kinnunen, Feldt, Pulkkinen (2008), Journal of Vocational Behavior 73(1). <a href="https://eric.ed.gov/?id=EJ801867">eric.ed.gov/?id=EJ801867</a></li>
+          <li>October, T. W. (2015): Work–Life Balance is an Illusion: Replace Guilt with Acceptance. Frontiers in Pediatrics 3:76. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4585105/">PMC4585105</a></li>
+          <li>Aarntzen, Derks, van Steenbergen, van der Lippe (2023), British Journal of Social Psychology 62(1). <a href="https://doi.org/10.1111/bjso.12575">doi.org/10.1111/bjso.12575</a></li>
+          <li>DWDS: Feierabend, Etymologie. <a href="https://www.dwds.de/wb/Feierabend">dwds.de/wb/Feierabend</a></li>
+          <li>Bundesurlaubsgesetz vom 8. Januar 1963, § 1 und § 8. <a href="https://www.gesetze-im-internet.de/burlg/BJNR000020963.html">gesetze-im-internet.de/burlg</a></li>
+          <li>Jüllig, C.: Der Kampf um den Achtstundentag. LeMO, Deutsches Historisches Museum. <a href="https://www.dhm.de/lemo/kapitel/weimarer-republik/industrie-und-wirtschaft/achtstundentag.html">dhm.de/lemo</a></li>
+          <li>Bertelsmann Stiftung: Work-Life-Balance. Meilenstein für eine zukunftsfähige Gesellschaft (graue Literatur, ca. 2007/08). <a href="https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Publikationen/GrauePublikationen/GP_Work-Life-Balance_Meilenstein.pdf">PDF</a></li>
+          <li>Cohen, Duberley, Musson (2009), Journal of Management Inquiry 18(3). <a href="https://doi.org/10.1177/1056492609332316">doi.org/10.1177/1056492609332316</a></li>
+          <li>Eikhof, Warhurst, Haunschild (2007), Employee Relations 29(4). <a href="https://doi.org/10.1108/01425450710839452">doi.org/10.1108/01425450710839452</a></li>
+          <li>Kelliher, Richardson, Boiarintseva (2019), Human Resource Management Journal 29(2). <a href="https://doi.org/10.1111/1748-8583.12215">doi.org/10.1111/1748-8583.12215</a></li>
+        </ul>
+        <p class="note">Die ursprüngliche Claude-Dokumentation nennt den 1. Oktober 2026 als Abrufdatum und verweist auf eine vollständige Belegakte. Für die vorliegende redaktionelle Überarbeitung habe ich diese Akte nicht mitgegeben. Die Quellenliste habe ich aus der ursprünglichen Dokumentation übernommen; eine erneute sachliche Prüfung habe ich damit nicht beauftragt.</p>
+      </section>
+</main><footer><div class="wrap foot"><span>© 2026 Olaf Wulf · Artikel: Claude · Redaktion: Codex</span><a href="index.html#impressum">Impressum und Kontakt</a><a href="datenschutz.html">Datenschutz</a></div></footer></body></html>
