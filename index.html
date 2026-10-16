@@ -80,8 +80,15 @@
       }
       @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
     </style>
-  </head>
+  <link rel="stylesheet" href="analytics-consent.css"><script src="analytics-consent.js" defer></script></head>
   <body>
+<section id="analytics-choice" aria-labelledby="analytics-choice-title" hidden>
+<h2 id="analytics-choice-title">Freiwillige Webanalyse</h2>
+<p>Mit Ihrer Zustimmung erfassen wir Seitenaufrufe, technische Geräteangaben und Ladezeiten mit unserer Swetrix-Instanz. Erst dann wird das Skript von swetrix.org geladen. Ohne Zustimmung bleibt die Webanalyse aus. Sie können Ihre Auswahl jederzeit im <a href="datenschutz.html#analytics-choice">Datenschutz</a> ändern.</p>
+<p id="analytics-status" aria-live="polite"></p>
+<div class="qp-actions"><button type="button" data-analytics-choice="denied">Ablehnen</button><button type="button" data-analytics-choice="granted">Akzeptieren</button></div>
+</section>
+
     <header>
       <div class="wrap nav">
         <a class="brand" href="#start">Olaf Wulf</a>
